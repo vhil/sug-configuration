@@ -3,14 +3,8 @@ var gulp = require("gulp");
 var msbuild = require("gulp-msbuild");
 var debug = require("gulp-debug");
 var foreach = require("gulp-foreach");
-//var rename = require("gulp-rename");
-//var watch = require("gulp-watch");
-//var newer = require("gulp-newer");
 var runSequence = require("run-sequence");
-//var path = require("path");
 var config = require("./gulp-config.js")();
-//var nugetRestore = require('gulp-nuget-restore');
-//var fs = require('fs');
 
 module.exports.config = config;
 
