@@ -238,11 +238,14 @@ ModelManifest.xml
 # Paket dependency manager
 .paket/paket.exe
 
+package-lock.json
+
 # FAKE - F# Make
 .fake/
-*Debug.config
 *.DotSettings
 *.orig
 
 
-package-lock.json
+
+
+**/App_Config/Local/*.config

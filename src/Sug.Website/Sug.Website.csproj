@@ -98,7 +98,8 @@
     <Content Include="App_Config\Include\Project\SiteDefinitions.config">
       <TransformOnBuild>true</TransformOnBuild>
     </Content>
-    <Content Include="App_Config\Local\SiteDefinitions.config" />
+    <Content Include="App_Config\Layers.config" />
+    <Content Include="App_Config\Local\DataFolder.config" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
