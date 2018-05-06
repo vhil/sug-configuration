@@ -8,12 +8,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{E97C2045-A267-40BE-ACAF-F044A81F9832}</ProjectGuid>
+    <ProjectGuid>{9DA0A956-5858-4C78-92C1-63896B222D4E}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sug</RootNamespace>
-    <AssemblyName>Sug</AssemblyName>
+    <RootNamespace>Sug.Feature.MyFeature</RootNamespace>
+    <AssemblyName>Sug.Feature.MyFeature</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -48,8 +48,17 @@
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.1.0.0\lib\netstandard1.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Analytics, Version=11.18.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sitecore.Analytics.NoReferences.9.0.171219\lib\NET462\Sitecore.Analytics.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Kernel, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Sitecore.Kernel.NoReferences.9.0.171219\lib\NET462\Sitecore.Kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Reflection.4.1.0\lib\net462\System.Reflection.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -69,56 +78,49 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="System.Web.Razor">
-      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.Webpages">
-      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.Webpages.Deployment">
-      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.Webpages.Razor">
-      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.Helpers">
-      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Web.Infrastructure">
-      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.Mvc">
-      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Web.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_Config\Include\Project\SiteDefinitions.config">
-      <TransformOnBuild>true</TransformOnBuild>
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="App_Config\Layers.config" />
-    <Content Include="App_Config\Local\DataFolder.config" />
+    <Content Include="App_Config\Include\Feature.MyFeature1.config" />
+    <Content Include="App_Config\Include\Feature.MyFeature2.config" />
+    <Content Include="App_Config\Include\Feature.MyFeature3.config" />
+    <Content Include="App_Config\Include\Feature.MyFeature4.config" />
+    <Content Include="App_Config\Include\Feature.MyFeature5.config" />
+    <Content Include="App_Config\Include\Feature.MyFeature6.config" />
+    <Content Include="App_Config\Include\Feature.MyFeature7.config" />
+    <Content Include="App_Config\Include\Feature.MyFeature8.config" />
+    <Content Include="App_Config\Include\Feature.MyFeature9.config" />
+    <Content Include="App_Config\Include\Feature.MyFeature.config" />
     <None Include="packages.config" />
-    <None Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
+    <Content Include="web.config" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
     </None>
-    <None Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
-    <Folder Include="App_Start\" />
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
-    <Folder Include="Views\" />
+    <Content Include="sitecore\examples.aspx" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configuration\ServicesConfigurator.cs" />
+    <Compile Include="Examples\MyClass1.cs" />
+    <Compile Include="Examples\MyClass2.cs" />
+    <Compile Include="Examples\MyClass3.cs" />
+    <Compile Include="Examples\MyClass4.cs" />
+    <Compile Include="Examples\MyClass5.cs" />
+    <Compile Include="Examples\MyClass6.cs" />
+    <Compile Include="Examples\MyClass7.cs" />
+    <Compile Include="Examples\MyClass8.cs" />
+    <Compile Include="Examples\MyClass9.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sitecore\examples.aspx.cs">
+      <DependentUpon>examples.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sitecore\examples.aspx.designer.cs">
+      <DependentUpon>examples.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -132,9 +134,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>53468</DevelopmentServerPort>
+          <DevelopmentServerPort>51619</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:53468/</IISUrl>
+          <IISUrl>http://localhost:51619/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
