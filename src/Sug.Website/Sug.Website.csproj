@@ -103,7 +103,7 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="App_Config\Layers.config" />
-    <Content Include="App_Config\Local\DataFolder.config" />
+    <Content Include="App_Config\Environment\DataFolder.config" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

@@ -89,7 +89,7 @@
     <Content Include="App_Config\Include\Feature.MyFeature9.config" />
     <Content Include="App_Config\Include\Feature.MyFeature.config" />
     <None Include="packages.config" />
-    <Content Include="web.config" />
+    <None Include="web.config" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>

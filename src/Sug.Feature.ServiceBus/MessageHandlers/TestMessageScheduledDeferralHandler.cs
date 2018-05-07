@@ -41,7 +41,7 @@
 			{
 				// TODO: handling logic implementation.
 
-				var random = new Random((int) DateTime.Now.Ticks).Next(1, 5);
+				var random = new Random((int) DateTime.Now.Ticks).Next(1, 11);
 
 				if (random % 2 == 0)
 				{
