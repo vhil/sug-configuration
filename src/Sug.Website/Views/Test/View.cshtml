@@ -1,0 +1,21 @@
+﻿@using Helpfulcore.Ste.Extensions
+@model Helpfulcore.Ste.Mvc.IViewModel
+
+<div class="row">
+	<div class="col-md-12">
+		TextField: @Model.RenderingItem.TextField("text") <br />
+		CheckboxField: @Model.RenderingItem.CheckboxField("checkbox") <br />
+		DateTimeField: @Model.RenderingItem.DateTimeField("datetime") <br />
+		LinkField: @Model.RenderingItem.LinkField("link") <br />
+		ImageField: @Model.RenderingItem.ImageField("image") <br />
+		GeneralLinkField: @Model.RenderingItem.GeneralLinkField("general link") <br />
+		FileField: @Model.RenderingItem.FileField("file") <br />
+		RichTextField: @Model.RenderingItem.RichTextField("rich text") <br />
+		NumberField: @Model.RenderingItem.NumberField("number") <br />
+		IntegerField: @Model.RenderingItem.IntegerField("integer") <br />
+		NameValueListField: @Model.RenderingItem.NameValueListField("Name value list") <br />
+		NameLookupValueField: @Model.RenderingItem.NameLookupValueField("Name lookup value list") <br />
+
+	</div>
+</div>
+
